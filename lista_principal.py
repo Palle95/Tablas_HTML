@@ -24,12 +24,13 @@ cursor1.execute("select * from libros")
 
 for base in cursor1:
     print("<tr>")
-    
-    print("<td>")
+    for item in base:
 
-    print(base) 
+        print("<td>")
+
+        print(item) 
     
-    print("</td>")
+        print("</td>")
     
     print("</tr>")
 
